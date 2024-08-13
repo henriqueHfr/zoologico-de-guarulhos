@@ -13,6 +13,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
 }
 
 body{
@@ -22,7 +24,7 @@ body{
 }
 
 header{
-    background-color: aqua;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2);
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -65,9 +67,15 @@ h1{
     justify-content: center;
     flex-direction: column;
 }
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .subtitulo{
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .container_localizacao{
@@ -93,6 +101,35 @@ h1{
 .texto{
     text-align: center;
 }
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+
+}
+footer p{
+    padding-top: 10px;
+    font-weight: bold;
+}
+.love {
+    display:inline-block;
+    position:relative;
+    top:.1em;
+    font-size:1.8em;
+    color:red;
+    transform:scale(.9);
+    animation:love .3s linear infinite alternate-reverse;
+    padding-left: 5px;
+}
+   
+   @keyframes love {
+    to {
+     transform:scale(1.1)
+    }
+   }
 </style>
 
 <body>
@@ -104,7 +141,7 @@ h1{
                 <li><a href="#Localizacao" class="links">Localização</a></li>
                 <li><a href="#Infraestrutura" class="links">Infraestrutura</a></li>
                 <li><a href="#Animais" class="links">Animais</a></li>
-                <li><a href="#Conclusão" class="links">Conclusão</a></li>
+                <li><a href="#Conclusao" class="links">Conclusão</a></li>
             </ul>
         </nav>
     </header>
@@ -168,7 +205,7 @@ h1{
                         <img src="assets/araravermelha.jpg" alt="imagems de uma arara">
                     </div>
                 </div>
-                <h3>Mamíferos</h3>
+                <h3 class="subtitulo">Mamíferos</h3>
                 <div>
                     <p class="texto">Alguns mamíferos presente no nosso zoológico:</p>
                     <p class="texto">Sauá, furão, macaco, leão, sagui, ouriço, sauim, mico-leão-dourado, sagui, lobo, bugio,tatu, anta, onça, queixada, gato, tamamduá e veado.</p>
@@ -177,7 +214,7 @@ h1{
                         <img src="assets/ONÇA PINTADA.jpg" alt="imagem de uma onça">
                     </div>
                 </div>
-                <h3>Répteis</h3>
+                <h3 class="subtitulo">Répteis</h3>
                 <div>
                     <p class="texto">Alguns répteis presente no nosso zoológico:</p>
                     <p class="texto">Jibóia, jacaré, iguana e tartaruga </p>
@@ -188,11 +225,14 @@ h1{
                 </div>
             </div>
             <div id="Conclusao" class="container">
-                <h2>Conclusão do Portfolio</h2>
+                <h2 class="subtitulo">Conclusão do Portfolio</h2>
                 <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, illo. Ut quae, aliquid accusamus unde officia esse deleniti quo totam?</p>
             </div>
         </section>
     </main>
+    <footer>
+        <p>Desenvolvido por Henrique Fernandes Rodrigues - RA: 231222024 <span class="love">♥</span></p> 
+    </footer>
 </body>
 
 </html>
