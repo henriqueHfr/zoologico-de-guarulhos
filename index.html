@@ -8,139 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Zoológico Guarulhos</title>
 </head>
-<style>
-    *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: sans-serif;
-}
-
-body{
-    width: 100%;
-    height: 100vh;
-    color: black;
-}
-
-header{
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2);
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    width: 100px;
-    height: 50px;
-}
-
-.navegacao{
-    display: flex;
-}
-
-.navegacao ul{
-    display: flex;
-    width: 500px;
-    justify-content: space-between;
-}
-
-.navegacao ul li{
-    list-style: none;
-    text-decoration: none;
-    transition: .7s all ease-in-out;
-}
-.navegacao ul li:hover{
-    background-color: aqua;
-}
-
-
-.links{
-    text-decoration: none;
-    color: black;
-}
-
-h1{
-    text-align: center;
-    margin-top: 20px;
-}
-
-.container{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.conteudo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.subtitulo{
-    margin-bottom: 20px;
-    margin-top: 50px;
-}
-
-.container_localizacao{
-    display: flex;
-    height: 100%;
-}
-
-.container_localizacao p{
-    margin-left: 20px;
-}
-
-.imagens{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.imagens img{
-    width: 30%;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-.texto{
-    margin: 10px 5% 10px 5%;
-    text-align: center;
-}
-footer{
-    width: 100%;
-    height: 60px;
-    background-color: aqua;
-    color: black;
-    text-align: center;
-    margin-top: 30px;
-
-}
-footer p{
-    padding-top: 10px;
-    font-weight: bold;
-}
-.love {
-    display:inline-block;
-    position:relative;
-    top:.1em;
-    font-size:1.8em;
-    color:red;
-    transform:scale(.9);
-    animation:love .3s linear infinite alternate-reverse;
-    padding-left: 5px;
-}
-   
-   @keyframes love {
-    to {
-     transform:scale(1.1)
-    }
-   }
-</style>
-
 <body>
-    <header>
+    <header id="top">
         <img src="assets/Brasão_de_Guarulhos.png" alt="Logo da prefeitura de guarulhos" class="logo">
         <nav class="navegacao">
             <ul>
@@ -152,93 +21,102 @@ footer p{
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <section>
+        <div id="Sobre" class="container bg">
             <h1>Zoológico de Guarulhos</h1>
-            <div id="Sobre" class="container">
-                <h2 class="subtitulo">
-                    Sobre o Zoológico
-                </h2>
-                <p class="texto">O Zoológico Municipal de Guarulhos, criado em 1981, mantém cerca de 400 animais de 100 diferentes
-                    espécies, priorizando a fauna nacional com 91% das espécies do plantel sendo nativas. </p>
-                <p class="texto">
-                    O ZooGuarulhos participa de programas de conservação de espécies ameaçadas, bem-estar animal,
-                    realiza pesquisas científicas e atividades de educação para conservação da biodiversidade.
-                </p>
-                <p class="texto">
-                    Os animais recebem cuidados constantes, tanto preventivos como curativos, por uma equipe de biólogos,
-                    veterinários e tratadores, incumbidos na manutenção de sua saúde e bem estar.
-                </p>
-            </div>
-            <div id="Localizacao" class="container">
-                <h2  class="subtitulo">Localização do nosso zoológico</h2>
-                <div class="container_localizacao">
-                    <iframe
+            <h2 class="subtitulo">
+                Sobre o Zoológico
+            </h2>
+            <p class="texto">O Zoológico Municipal de Guarulhos, criado em 1981, mantém cerca de 400 animais de 100
+                diferentes
+                espécies, priorizando a fauna nacional com 91% das espécies do plantel sendo nativas. </p>
+            <p class="texto">
+                O ZooGuarulhos participa de programas de conservação de espécies ameaçadas, bem-estar animal,
+                realiza pesquisas científicas e atividades de educação para conservação da biodiversidade.
+            </p>
+            <p class="texto">
+                Os animais recebem cuidados constantes, tanto preventivos como curativos, por uma equipe de biólogos,
+                veterinários e tratadores, incumbidos na manutenção de sua saúde e bem estar.
+            </p>
+        </div>
+        <div id="Localizacao" class="container">
+            <h2 class="subtitulo">Localização do nosso zoológico</h2>
+            <div class="container_localizacao">
+                <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.4920847859416!2d-46.552357799999996!3d-23.442708099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4ffea13bf09%3A0xb8d85899781b01d4!2sZool%C3%B3gico%20Municipal%20de%20Guarulhos!5e0!3m2!1spt-BR!2sbr!4v1723499184571!5m2!1spt-BR!2sbr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="conteudo">
-                        <p>Endereço
-                            Rua Dona Gloria Pagnoncelli,344 - Jardim Rosa de França - Guarulhos - SP</p>
-                        <p>Horário de Funcionamento</p>
-                        <p>Terça a Domingo das 09:00 às 17:00</p>
-                        <p>Fechamento dos Portões</p>
-                        <p> Às 16:30</p>
+                <div class="conteudo">
+                    <p>Endereço
+                        Rua Dona Gloria Pagnoncelli,344 - Jardim Rosa de França - Guarulhos - SP</p>
+                    <p>Horário de Funcionamento</p>
+                    <p>Terça a Domingo das 09:00 às 17:00</p>
+                    <p>Fechamento dos Portões</p>
+                    <p> Às 16:30</p>
 
 
-                    </div>
                 </div>
             </div>
-            <div id="Infraestrutura" class="container">
-                <h2  class="subtitulo">
-                    Infraestrutura
-                </h2>
-                <p class="texto">
-                    A infraestrutura do Zoológico Municipal de Guarulhos inclui clínica veterinária e área de manejo,
-                    com salas de atendimento, laboratório, sala de cirurgia, área de internação e sala de necropsia.
-                    <br>
-                    Além disso, oferece setor de alimentação e biotério para produção de alimentos vivos, garantindo que
-                    os animais tenham uma dieta balanceada e adequada.
-                </p>
-            </div>
-            <div id="Animais" class="container">
-                <h2 class="subtitulo">Animais</h2>
-                <h3>Aves</h3>
-                <div>
-                    <p class="texto">Algumas aves presente no nosso zoológico:</p>
-                    <p class="texto">Arara, carcará, maitaca, papagaio, periquitão, urubu, anacã, Arajuba, coruja, gralha, tucano, ema, mutum, pica-pau, suindara, seriema, jandaia...</p>
-                    <div class="imagens">
-                        <img src="assets/ararajuba.jpg" alt="imagem de uma ararajuba">
-                        <img src="assets/araravermelha.jpg" alt="imagems de uma arara">
-                    </div>
-                </div>
-                <h3 class="subtitulo">Mamíferos</h3>
-                <div>
-                    <p class="texto">Alguns mamíferos presente no nosso zoológico:</p>
-                    <p class="texto">Sauá, furão, macaco, leão, sagui, ouriço, sauim, mico-leão-dourado, sagui, lobo, bugio,tatu, anta, onça, queixada, gato, tamamduá e veado.</p>
-                    <div class="imagens">
-                        <img src="assets/macacobarrigudo.jpg" alt="imagem de  um macaco">
-                        <img src="assets/ONÇA PINTADA.jpg" alt="imagem de uma onça">
-                    </div>
-                </div>
-                <h3 class="subtitulo">Répteis</h3>
-                <div>
-                    <p class="texto">Alguns répteis presente no nosso zoológico:</p>
-                    <p class="texto">Jibóia, jacaré, iguana e tartaruga </p>
-                    <div class="imagens">
-                        <img src="assets/jacare.jpeg" alt="imagem de um jacaré">
-                        <img src="assets/jiboiaarcoiris.jpg" alt="imagem de uma jibóia">
-                    </div>
+        </div>
+        <div id="Infraestrutura" class="container bg">
+            <h2 class="subtitulo">
+                Infraestrutura
+            </h2>
+            <p class="texto">
+                A infraestrutura do Zoológico Municipal de Guarulhos inclui clínica veterinária e área de manejo,
+                com salas de atendimento, laboratório, sala de cirurgia, área de internação e sala de necropsia.
+                <br>
+                Além disso, oferece setor de alimentação e biotério para produção de alimentos vivos, garantindo que
+                os animais tenham uma dieta balanceada e adequada.
+            </p>
+        </div>
+        <div id="Animais" class="container">
+            <h2 class="subtitulo">Animais</h2>
+            <h3>Aves</h3>
+            <div>
+                <p class="texto">Algumas aves presente no nosso zoológico:</p>
+                <p class="texto">Arara, carcará, maitaca, papagaio, periquitão, urubu, anacã, Arajuba, coruja, gralha,
+                    tucano, ema, mutum, pica-pau, suindara, seriema, jandaia...</p>
+                <div class="imagens">
+                    <img src="assets/ararajuba.jpg" alt="imagem de uma ararajuba">
+                    <img src="assets/araravermelha.jpg" alt="imagems de uma arara">
                 </div>
             </div>
-            <div id="Conclusao" class="container">
-                <h2 class="subtitulo">Conclusão do Portfolio</h2>
-                <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, illo. Ut quae, aliquid accusamus unde officia esse deleniti quo totam?</p>
+            <h3 class="subtitulo">Mamíferos</h3>
+            <div>
+                <p class="texto">Alguns mamíferos presente no nosso zoológico:</p>
+                <p class="texto">Sauá, furão, macaco, leão, sagui, ouriço, sauim, mico-leão-dourado, sagui, lobo,
+                    bugio,tatu, anta, onça, queixada, gato, tamamduá e veado.</p>
+                <div class="imagens">
+                    <img src="assets/macacobarrigudo.jpg" alt="imagem de  um macaco">
+                    <img src="assets/ONÇA PINTADA.jpg" alt="imagem de uma onça">
+                </div>
             </div>
-        </section>
-    </main>
+            <h3 class="subtitulo">Répteis</h3>
+            <div>
+                <p class="texto">Alguns répteis presente no nosso zoológico:</p>
+                <p class="texto">Jibóia, jacaré, iguana e tartaruga </p>
+                <div class="imagens">
+                    <img src="assets/jacare.jpeg" alt="imagem de um jacaré">
+                    <img src="assets/jiboiaarcoiris.jpg" alt="imagem de uma jibóia">
+                </div>
+            </div>
+        </div>
+        <div id="Conclusao" class="container bg">
+            <h2 class="subtitulo">Conclusão do Portfolio</h2>
+            <p class="texto">Texte Portfolio me ajudou a entender como funciona as principais tecnológias Web, entre
+                elas o HTML(Hiper text markup language), consegui entender suas estruturas, onde cada tag possui um
+                incio e um fechamento, todas as tags precisam ter um maior que(<) e um menor que(>) entre a tag, também
+                    vale lembrar que na maioria das tag quando houver um fechamento precisa conter um barra(/).</p>
+            <p class="texto">Neste Portfolio também aprendi como posso estilizar as minhas tags e deixar o site mais
+                bonito, usando o CSS(Cascading style sheets), aprendi como usar o flexbox, grid e como separar os dados
+                e deixado o site mais bonito.</p>
+            <p class="texto">Por fim, toda essa jornada me ajudou bastante a entender como realmente funciona a criação
+                de aplicações web e o funcionamento do mesmo.</p>
+        </div>
+    </section>
     <footer>
-        <p>Desenvolvido por Henrique Fernandes Rodrigues - RA: 231222024 <span class="love">♥</span></p> 
+        <p>Desenvolvido por Henrique Fernandes Rodrigues - RA: 231222024 <span class="love">♥</span></p>
     </footer>
 </body>
 
